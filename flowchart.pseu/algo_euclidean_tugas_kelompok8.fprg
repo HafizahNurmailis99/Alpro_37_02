@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-06-05 11:36:44 AM"/>
+        <attribute name="created" value="TEVOT1ZPO0xBUFRPUC1OQUVIRTMyNjsyMDIwLTA0LTI2OzA5OjA2OjM1IFBNOzI3Njc="/>
+        <attribute name="edited" value="TEVOT1ZPO0xBUFRPUC1OQUVIRTMyNjsyMDIwLTA2LTA1OzExOjM2OjQ0IEFNOzQ7Mjg1OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y, r" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan Bilangan Ke-1 : &quot;" newline="False"/>
+            <input variable="x"/>
+            <output expression="&quot;Masukkan Bilangan ke-2 : &quot;" newline="False"/>
+            <input variable="y"/>
+            <output expression="&quot;FPB (Faktor Persekutuan Terbesar) dari &quot;" newline="False"/>
+            <output expression="x" newline="False"/>
+            <output expression="&quot; dan &quot;" newline="False"/>
+            <output expression="y" newline="False"/>
+            <output expression="&quot; adalah &quot;" newline="False"/>
+            <while expression="y!=0">
+                <assign variable="r" expression="x%y"/>
+                <assign variable="x" expression="y"/>
+                <assign variable="y" expression="r"/>
+            </while>
+            <output expression="x" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

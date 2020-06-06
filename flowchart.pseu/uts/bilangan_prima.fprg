@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-05-02 10:10:21 AM"/>
+        <attribute name="created" value="TEVOT1ZPO0xBUFRPUC1OQUVIRTMyNjsyMDIwLTA1LTAyOzEwOjA1OjM0IEFNOzI3Mzc="/>
+        <attribute name="edited" value="TEVOT1ZPO0xBUFRPUC1OQUVIRTMyNjsyMDIwLTA1LTAyOzEwOjEwOjIxIEFNOzE7MjgzNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <output expression="&quot;Input Bilangan : &quot;" newline="False"/>
+            <input variable="x"/>
+            <if expression="x&lt;=1">
+                <then>
+                    <output expression="&quot;Angka &quot;" newline="False"/>
+                    <output expression="x" newline="False"/>
+                    <output expression="&quot; bukan bilangan Prima&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="x==2||x==3||x==5||x==7">
+                        <then>
+                            <output expression="&quot;Angka &quot;" newline="False"/>
+                            <output expression="x" newline="False"/>
+                            <output expression="&quot; adalah bilangan Prima&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="x%2==0||x%3==0||x%5==0||x%7==0">
+                                <then>
+                                    <output expression="&quot;Angka &quot;" newline="False"/>
+                                    <output expression="x" newline="False"/>
+                                    <output expression="&quot; bukan bilangan Prima&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Angka &quot;" newline="False"/>
+                                    <output expression="x" newline="False"/>
+                                    <output expression="&quot; adalah bilangan Prima&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

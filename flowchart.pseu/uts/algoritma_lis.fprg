@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-05-02 10:40:10 AM"/>
+        <attribute name="created" value="TEVOT1ZPO0xBUFRPUC1OQUVIRTMyNjsyMDIwLTA0LTMwOzEwOjIzOjU3IFBNOzI3NTc="/>
+        <attribute name="edited" value="TEVOT1ZPO0xBUFRPUC1OQUVIRTMyNjsyMDIwLTA1LTAyOzEwOjQwOjEwIEFNOzI7MjgzOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="array" type="Integer" array="True" size="6"/>
+            <assign variable="array[0]" expression="1"/>
+            <assign variable="array[1]" expression="4"/>
+            <assign variable="array[2]" expression="3"/>
+            <assign variable="array[3]" expression="5"/>
+            <assign variable="array[4]" expression="2"/>
+            <assign variable="array[5]" expression="6"/>
+            <declare name="n, i, j, max" type="Integer" array="False" size=""/>
+            <assign variable="n" expression="6"/>
+            <output expression="&quot;menampilkan semua array : &quot;" newline="True"/>
+            <for variable="i" start="0" end="5" direction="inc" step="1">
+                <output expression="array[i]" newline="False"/>
+                <output expression="&quot; &quot;" newline="True"/>
+            </for>
+            <declare name="lis" type="Integer" array="True" size="n"/>
+            <assign variable="max" expression="0"/>
+            <for variable="i" start="0" end="n" direction="inc" step="1">
+                <for variable="j" start="0" end="i" direction="inc" step="1">
+                    <if expression="array[i]&gt;array[j] &amp;&amp; lis[i]&lt;lis[j] +1">
+                        <then>
+                            <assign variable="lis[i]" expression="lis[j]+1"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <for variable="i" start="0" end="n" direction="inc" step="1">
+                <if expression="max&lt;lis[i]">
+                    <then>
+                        <assign variable="max" expression="lis[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot; &quot;" newline="True"/>
+            <output expression="&quot;Panjang LIS : &quot;" newline="False"/>
+            <output expression="max" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

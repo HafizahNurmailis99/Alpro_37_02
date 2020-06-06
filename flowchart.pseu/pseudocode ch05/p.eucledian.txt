@@ -1,0 +1,19 @@
+Function Main
+    Declare Integer m, n, r
+    
+    Output "Input angka 1 : "
+    Input m
+    Output "Input angka 2 : "
+    Input n
+    Output "FPB dari "
+    Output m
+    Output " dan "
+    Output n
+    Output " adalah "
+    While n!=0
+        Assign r = m%n
+        Assign m = n
+        Assign n = r
+    End
+    Output m
+End

@@ -1,0 +1,34 @@
+Function Main
+    Declare String kata1, kata2
+    kata1 = "SURABAYA"
+    kata2 = "SURAKARTA"
+    Declare char Array X[8]
+    Declare char Array Y[9]
+    Declare Integer m, n
+    Assign m = X.length
+    Assign n = Y.length
+
+    Output "Menampilkan semua nilai array "
+    Output kata1
+    Output kata2
+    
+    Declare Integer Array L[m+1][n+1]
+    
+    For i = 0 to m
+        For i = 0 to n
+	    If i==0 or j==0
+		Assign L[i][j] = 0
+    	    False :
+		If X[i-1] == Y[j-1]
+		    Assign L[i][j] = L[i-1][j-1] + 1
+    	        False :
+		    Assign L[i][j] = Integer.max(L[i-1][j], L[i][j-1])
+                End
+           End
+       End
+    End
+    
+    Output " "
+    Output "Panjang dari LCS : "
+    Output L[m][n]
+End

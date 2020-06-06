@@ -1,0 +1,32 @@
+Function Main
+    Declare Integer Array array[4]
+    
+    Assign array[0] = -1
+    Assign array[1] = 8
+    Assign array[2] = -2
+    Assign array[3] = 4
+    Declare Integer i
+    
+    Output "Menampilkan semua nilai array "
+    For i = 0 to 3
+        Output array[i]
+        Output " "
+    End
+    Output " "
+    Declare Integer maxSum, sum
+    
+    Assign sum = array[0]
+    Assign maxSum = array[0]
+    For i = 0 to 3
+        If sum<0
+            Assign sum = array[i]
+        False:
+            Assign sum = sum+array[i]
+        End
+        If sum>maxSum
+            Assign maxSum = sum
+        End
+    End
+    Output "Jumlah sub-array yang berdekatan dengan jumlah terbesar adalah "
+    Output maxSum
+End
