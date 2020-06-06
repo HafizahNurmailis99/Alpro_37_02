@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ichwannur"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-04-24 02:40:31 PM"/>
+        <attribute name="created" value="aWNod2FubnVyO0RFU0tUT1AtNDhLVTJSNDsyMDIwLTA0LTIzOzEwOjIxOjI2IFBNOzMyNzk="/>
+        <attribute name="edited" value="aWNod2FubnVyO0RFU0tUT1AtNDhLVTJSNDsyMDIwLTA0LTI0OzAxOjM0OjE4IEFNOzE7aWNod2FubnVyO0RFU0tUT1AtNDhLVTJSNDsyMDIwLTA0LTIzOzEwOjIxOjI2IFBNO0MuZnByZzs3MzE5"/>
+        <attribute name="edited" value="aWNod2FubnVyO0RFU0tUT1AtNDhLVTJSNDsyMDIwLTA0LTI0OzAxOjM1OjE5IEFNOzM7MzM4Mg=="/>
+        <attribute name="edited" value="TEVOT1ZPO0xBUFRPUC1OQUVIRTMyNjsyMDIwLTA0LTI0OzAyOjQwOjMxIFBNOzI7Mjg2MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="array" type="Integer" array="True" size="13"/>
+            <assign variable="array[0]" expression="82"/>
+            <assign variable="array[1]" expression="12"/>
+            <assign variable="array[2]" expression="41"/>
+            <assign variable="array[3]" expression="38"/>
+            <assign variable="array[4]" expression="19"/>
+            <assign variable="array[5]" expression="26"/>
+            <assign variable="array[6]" expression="9"/>
+            <assign variable="array[7]" expression="48"/>
+            <assign variable="array[8]" expression="20"/>
+            <assign variable="array[9]" expression="55"/>
+            <assign variable="array[10]" expression="8"/>
+            <assign variable="array[11]" expression="32"/>
+            <assign variable="array[12]" expression="3"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="cari" type="Integer" array="False" size=""/>
+            <output expression="&quot;Angka yang disediakan : &quot;" newline="True"/>
+            <for variable="i" start="0" end="12" direction="inc" step="1">
+                <output expression="array[i]" newline="False"/>
+                <output expression="&quot; &quot;" newline="False"/>
+            </for>
+            <output expression="&quot;&quot;" newline="True"/>
+            <input variable="cari"/>
+            <declare name="ketemu" type="Boolean" array="False" size=""/>
+            <assign variable="ketemu" expression="false"/>
+            <for variable="i" start="0" end="12" direction="inc" step="1">
+                <if expression="array[i]==cari">
+                    <then>
+                        <assign variable="ketemu" expression="true"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="ketemu">
+                <then>
+                    <output expression="&quot;Angka &quot;" newline="False"/>
+                    <output expression="cari" newline="False"/>
+                    <output expression="&quot; ditemukan&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Angka &quot;" newline="False"/>
+                    <output expression="cari" newline="False"/>
+                    <output expression="&quot; tidak ditemukan&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,36 @@
+Function Main
+    Declare Integer Array array[6]
+    
+    Assign array[0] = 1
+    Assign array[1] = 4
+    Assign array[2] = 3
+    Assign array[3] = 5
+    Assign array[4] = 2
+    Assign array[5] = 6
+    Declare Integer n, i, j, max
+    
+    Assign n = 6
+    Output "menampilkan semua array : "
+    For i = 0 to 5
+        Output array[i]
+        Output " "
+    End
+    Declare Integer Array lis[n]
+    
+    Assign max = 0
+    For i = 0 to n
+        For j = 0 to i
+            If array[i]>array[j] && lis[i]<lis[j] +1
+                Assign lis[i] = lis[j]+1
+            End
+        End
+    End
+    For i = 0 to n
+        If max<lis[i]
+            Assign max = lis[i]
+        End
+    End
+    Output " "
+    Output "Panjang LIS : "
+    Output max
+End
